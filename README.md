@@ -9,7 +9,7 @@ location; omitted arguments retain the default locations. For example,
 `use=A.layers["counts"]` reads a layer and `out=A.obsm["X_umap_harmony"]`
 stores an embedding. See the [RAPIDS-singlecell release notes](https://rapids-singlecell.scverse.org/en/latest/release-notes/index.html).
 
-[//]: # (numfocus-fiscal-sponsor-attribution)
+[//]: # "numfocus-fiscal-sponsor-attribution"
 
 rapids_singlecell-notebooks is part of the scverse® project ([website](https://scverse.org), [governance](https://scverse.org/about/roles)) and is fiscally sponsored by [NumFOCUS](https://numfocus.org/).
 If you like scverse® and want to support our mission, please consider making a tax-deductible [donation](https://numfocus.org/donate-to-scverse) to help the project pay for developer time, professional services, travel, workshops, and a variety of other needs.
