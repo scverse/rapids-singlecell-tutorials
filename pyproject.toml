@@ -1,0 +1,35 @@
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "F",  # Errors detected by Pyflakes
+    "E",  # Error detected by Pycodestyle
+    "W",  # Warning detected by Pycodestyle
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "TID",  # flake8-tidy-imports
+    "C4",  # flake8-comprehensions
+    "BLE",  # flake8-blind-except
+    "UP",  # pyupgrade
+    "RUF100",  # Report unused noqa directives
+    "TC",  # Typing imports
+    "NPY",  # Numpy specific rules
+    "PTH",  # Use pathlib
+]
+ignore = [
+    # line too long -> we accept long comment lines; the formatter gets rid of long code lines
+    "E501",
+    # Do not assign a lambda expression, use a def -> lambda expression assignments are convenient
+    "E731",
+    # allow I, O, l as variable names -> I is the identity matrix
+    "E741",
+    # Errors from function calls in argument defaults. These are fine when the result is immutable.
+    "B008",
+    # Imports unused
+    "F401",
+    # module import not at top level of file
+    "E402",
+    # useless expression -> notebooks display the last expression of a cell
+    "B018",
+]
